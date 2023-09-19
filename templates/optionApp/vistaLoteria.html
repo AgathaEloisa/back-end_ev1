@@ -1,0 +1,11 @@
+<h1>Estos son los números de la suerte en este momento</h1>
+
+<ul>
+  {% for i in orderedNumbers %}
+  <li>{{i}}</li>
+  {% endfor %}  
+</ul>
+<br>
+<a href="{% url 'menuApp:home' %}">
+  <Button>Volver</Button>
+</a>
